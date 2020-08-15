@@ -1,0 +1,24 @@
+Create local storage of default streams
+const localStorage = window.localStorage;
+
+Make stream links into objects
+var stream1 = {
+streamLink: "whatever the stream link is",
+streamName: "CBC, BBC, whatever"
+
+}
+
+var stream2 = {
+streamLink: "whatever stream link is",
+streamName: "CBC, BBC, whatever"
+}
+
+Load these into local storage
+
+When user clicks add stream button, create new object with empty attributes
+Assign name of object to "mystream" + "length of object storage array"
+Use input fields to define stream link and stream name
+Add this to local storage
+Reload page
+
+On double click, delete stream from local storage

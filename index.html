@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>YourStream</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <ul class="menu">
+                <li>YourStream</li>
+                <li class="items"><a href="guide.html">Guide</a></li>
+                <li class="items"><a href="intention.html">Intention</a></li>
+                <li class="items"><a href="security.html">Security</a></li>
+            </ul>
+
+        </header>
+
+        <main class="homepageMain">
+
+            <div class="container" id="mainwindow">
+                <div class="channelChanger">
+                    <div class="instructions">
+                        <p>Double click to delete a stream</p>
+                    </div>
+                    <ul id="channelList">
+
+                    </ul>
+                </div>
+                <div class="vidFrame">
+                    <div class="vidWindow">
+
+                    </div>
+                </div>
+                <div class="rightbox">
+                </div>
+            </div>
+        </main>
+
+        <div class="addbar">
+            <form class="form" onsubmit = "addStream(); return false;">
+                <div class="subfields" id="entry">
+                    <p class="fields">Name your stream</p>
+                    <input type="text" maxlength="15" id="userStreamName">
+                </div>
+                <div class="subfields" id="element">
+                    <p class="fields">Add HTML iframe or video element here</p>
+                    <input type="text" id ="userStreamLink">
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+
+        <script type="text/javascript" src="javascript.js"></script>
+
+    </body>
+
+</html>

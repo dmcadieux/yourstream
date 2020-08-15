@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>News Addict</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+
+
+        <div id="wrapper">
+
+            <div id="channelchanger">
+                <ul>
+                    <li id="CBC">CBC</li>
+                    <li id="France24">France 24</li>
+                    <li id="AlJazeera">Al-Jazeera</li>
+                </ul>
+            </div>
+            <div id="alignmentbox">
+                <table id="vidframe">
+                    <tr>
+                        <td id="vidWindow">
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+        </div>
+
+        <div id='placeholder'></div>
+
+        <script> // function() is an anonymous function
+
+            // Stream iframes
+
+            forCBC = '<iframe id="cbcFrame" width="640" height="360" src="//www.cbc.ca/i/caffeine/syndicate/?mediaId=1711321155969" frameborder="0" allowfullscreen></iframe>';
+            forF24 = '<iframe id="france24Frame" width="640" height="360" src="https://www.youtube.com/embed/6N0lbZr_wXs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+            forAlJ = '<iframe id="alJazeeraFrame" width="640" height="360" src="https://players.brightcove.net/665003303001/SkrZHHcl_default/index.html?videoId=5467349513001&usrPersonaAds=0" allowfullscreen frameborder=0></iframe>';
+
+
+            function vid(link)
+            {
+                document.querySelector("#vidWindow").innerHTML = link;
+            }
+
+            document.querySelector('#CBC').onclick = function() {
+                vid(forCBC);
+
+            };
+
+            document.querySelector('#France24').onclick = function() {
+                vid(forF24);
+
+            };
+
+            document.querySelector('#AlJazeera').onclick = function() {
+                vid(forAlJ);
+            };
+
+        </script>
+    </body>
+
+</html>
